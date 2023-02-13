@@ -1,0 +1,62 @@
+/*
+
+Flexbox - flexbox is because you want to lay a collection of items out in one direction or another.
+
+Radial Gradient - creates an image consisting of a progressive transition between two or more colors that radiate from an origin.
+
+*/
+
+<html>
+  <head>
+      <style>
+          .container{
+          background-image:radial-gradient(#fc466b,#000046);
+          height:100vh; /* vh- viewable screen's height */
+          border-radius:32px;
+          display:flex; /* displays in a row (horizontal) */
+        }
+
+        .content{
+          width:100%;
+          margin-top:7%;
+        }
+
+        .content h1, h3, h5{
+          text-align:center;
+          color:#fff;
+          font-family:Cursive;
+        }
+
+        .content h1{
+          font-size:100px;
+        }
+
+        .content h3{
+          font-size:60px;
+          margin-top:-99px;
+        }
+
+        .content h5{
+          font-size:24px;
+          margin-top:-60px;
+        }
+
+        .content p{
+          color:#fff;
+          float:right;
+          margin-top:-20px;
+          margin-right:20px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>100</h1>
+        <h3>Days</h3>
+        <h5>Challenge</h5>
+        <p>- Reddy Divya</p>
+      </div>
+    </div>
+  </body>
+</html>
