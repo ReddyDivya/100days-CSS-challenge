@@ -63,7 +63,37 @@
       transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
    
 ---
+## CSS Animation
+    
+   - CSS allows animation of HTML elements without using JavaScript or Flash!
+   - An animation lets an element gradually change from one style to another.
+   - You can change as many CSS properties you want, as many times as you want.
+   - To use CSS animation, you must first specify some keyframes for the animation.
+   - Keyframes hold what styles the element will have at certain times.
 
+  ### The @keyframes Rule
+  
+   - When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+   - To get an animation to work, you must bind the animation to an element.
+   
+   ### Example
+   
+     /* The animation code */
+    @keyframes example {
+      from {background-color: red;}
+      to {background-color: yellow;}
+    }
+
+    /* The element to apply the animation to */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+  
+---
 ## SASS Variables
   
   - Variables are a way to store information that you can re-use later
