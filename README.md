@@ -4,4 +4,6 @@
 
 [Day 2](https://codepen.io/Reddy_Divya/pen/jOvNLeG)
 
+[Day 3](https://codepen.io/Reddy_Divya/pen/QWVLOXy)
+
 
