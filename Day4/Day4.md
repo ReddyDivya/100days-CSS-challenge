@@ -68,14 +68,18 @@
    ### forwards 
      
    - The target will retain the computed values set by the last keyframe encountered during execution. 
+   - The animation will be applied and won't come to it's origin.
    
    ### backwards 
    
+   - The animation will be applied and comes back to it's origin.
    - The animation will apply the values defined in the first relevant keyframe as soon as it is applied to the target, and retain this during the animation-delay period.
 
    ### both
    
    - The animation will follow the rules for both forwards and backwards, thus extending the animation properties in both directions.
+
+   [Demo](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode)
      
   
 
