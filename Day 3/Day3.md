@@ -115,6 +115,20 @@
     }
   
 ---
+
+## transform-origin 
+  
+   - The transform-origin property allows you to change the position of transformed elements.
+   - 2D transformations can change the x- and y-axis of an element. 3D transformations can also change the z-axis of an element.
+   
+   ### Example
+   
+     div {
+        transform: rotate(45deg);
+        transform-origin: 20% 40%;
+      }
+
+---
 ## SASS Variables
   
   - Variables are a way to store information that you can re-use later
