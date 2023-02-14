@@ -54,5 +54,30 @@
         }
 ---        
 
+## CSS animation - animation-fill-mode
+
+  - The animation-fill-mode CSS property sets how a CSS animation applies styles to its target before and after its execution.
+  
+  ## Syntax
+  
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
+    animation-fill-mode: both;
+    
+   ### forwards 
+     
+   - The target will retain the computed values set by the last keyframe encountered during execution. 
+   
+   ### backwards 
+   
+   - The animation will apply the values defined in the first relevant keyframe as soon as it is applied to the target, and retain this during the animation-delay period.
+
+   ### both
+   
+   - The animation will follow the rules for both forwards and backwards, thus extending the animation properties in both directions.
+     
+  
+
 
   
