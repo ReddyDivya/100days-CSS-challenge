@@ -1,5 +1,9 @@
 ## 003 - The Pyramide
 
+## Declaring global CSS variables
+
+  - :root can be useful for declaring global CSS variables:
+
 ## CSS clip-path Property
 
   - The clip-path CSS property creates a clipping region that sets what part of an element should be shown.
