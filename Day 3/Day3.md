@@ -48,3 +48,76 @@
       
       transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
    
+---
+
+## SASS Variables
+  
+  - Variables are a way to store information that you can re-use later
+  - With Sass, you can store information in variables, like:
+      strings
+      numbers
+      colors
+      booleans
+      lists
+      nulls
+  - Sass uses the $ symbol, followed by a name, to declare variables
+  
+   ### Syntax
+   
+      $variablename: value;
+      
+   ### Example
+   
+      $myFont: Helvetica, sans-serif;
+      $myColor: red;
+      $myFontSize: 18px;
+      $myWidth: 680px;
+
+      body {
+        font-family: $myFont;
+        font-size: $myFontSize;
+        color: $myColor;
+      }
+
+      #container {
+        width: $myWidth;
+      }
+      
+ ---
+ 
+ ## SASS Variable Scope
+ 
+  - Sass variables are only available at the level of nesting where they are defined.
+  
+  ### Example
+  
+    $myColor: red;
+
+    h1 {
+      $myColor: green;
+      color: $myColor;
+    }
+
+    p {
+      color: $myColor;
+    }  
+---
+
+ ## Using SASS !global
+ 
+ - The default behavior for variable scope can be overridden by using the !global switch.
+ - !global indicates that a variable is global, which means that it is accessible on all levels.
+ 
+ ### Example
+ 
+     $myColor: red;
+
+      h1 {
+        $myColor: green !global;
+        color: $myColor;
+      }
+
+      p {
+        color: $myColor;
+      }
+ 
