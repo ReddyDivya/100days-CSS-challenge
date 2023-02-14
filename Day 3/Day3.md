@@ -36,5 +36,15 @@
 
 ## CSS cubic-bezier()
 
-  A transition effect with variable speed from start to end
+  - The cubic-bezier() function defines a Cubic Bezier curve.
+  - A transition effect with variable speed from start to end.
+  - A Cubic Bezier curve is defined by four points P0, P1, P2, and P3.
+  - P0 and P3 are the start and the end of the curve and, in CSS these points are fixed as the coordinates are ratios.
+  - P0 is (0, 0) and represents the initial time and the initial state, P3 is (1, 1) and represents the final time and the final state.
+
+  ### syntax
+      
+      x1,y1,x2,y2	Required. Numeric values. x1 and x2 must be a number from 0 to 1
+      
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
    
