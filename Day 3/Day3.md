@@ -2,7 +2,21 @@
 
 ## Declaring global CSS variables
 
-  - :root can be useful for declaring global CSS variables:
+  - :root can be useful for declaring global CSS variables
+  
+  ### Syntax
+      
+      :root {
+          --main-color: hotpink;
+          --pane-padding: 5px 42px;
+        }
+        
+      h1
+      {
+        background: var(--main-color);
+        padding: var(--pane-padding);
+      }  
+---  
 
 ## CSS clip-path Property
 
