@@ -8,4 +8,6 @@
 
 [Day 4 - Loading](https://codepen.io/Reddy_Divya/pen/ZEMEWow)
 
+[Day 5 - Statistics](https://codepen.io/Reddy_Divya/pen/NWLWdRE)
+
 
