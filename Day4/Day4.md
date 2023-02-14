@@ -54,6 +54,20 @@
         }
 ---        
 
+## CSS animation - shorthand
+  
+  - The animation shorthand CSS property applies an animation between styles. 
+  - It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-  fill-mode, and animation-play-state.
+
+    ### Example
+    
+        /* animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction*/
+        
+        $bezier: cubic-bezier(.21,.98,.6,.99);
+        
+        animation: jump-jump-1 2s $bezier infinite alternate; /* name duration timing-function delay iteration-count direction*/
+  
+---
 ## CSS animation - animation-fill-mode
 
   - The animation-fill-mode CSS property sets how a CSS animation applies styles to its target before and after its execution.
@@ -80,7 +94,37 @@
    - The animation will follow the rules for both forwards and backwards, thus extending the animation properties in both directions.
 
    [Demo](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode)
-     
+
+---
+
+## CSS animation - animation-delay
+
+  - The animation-delay CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. 
+  - The animation can start later, immediately from its beginning, or immediately and partway through the animation.
+  
+  ### Example
+  
+     animation-delay: 3s;
+    
+  [Demo](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay)
+
+---  
+
+## transform: scale()
+
+  - The scale() CSS function defines a transformation that resizes an element on the 2D plane.
+  - It can resize the horizontal and vertical dimensions at different scales.
+
+  ### Example
+  
+    transform:scale(1);
+    transform:scale(0.7);
+    transform: scale(1.3, 0.4); /* Horizontal Vertical */
+    transform: scale(-0.5, 1); /* Horizontal Vertical */
+    
+  [Demo](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale)
+
+---  
   
 
 
