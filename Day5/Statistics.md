@@ -71,7 +71,11 @@
 
 ---
 
-### SVG (Scalable Vector Graphics)
+## Sass Ampersand
+
+---
+
+## SVG (Scalable Vector Graphics)
     
    - SVG defines vector-based graphics in XML format.
    - SVG defines the graphics in XML format.
@@ -99,6 +103,7 @@
    - stroke - border color
    - fill - background color
    - stroke-width - width of the stroke
+   - points - polyline directions
 
   ### Example
   
@@ -115,8 +120,3 @@
       </svg>
 
   ---  
-  
-
-
-  
-
