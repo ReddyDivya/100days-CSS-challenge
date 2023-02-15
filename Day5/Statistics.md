@@ -72,6 +72,43 @@
 ---
 
 ## Sass Ampersand
+  
+  - It’s used when nesting.
+  - It can be a nice time-saver when you know how to use it, or a bit of a time-waster when you’re struggling and could have written the same code in regular CSS
+
+  ### Example
+    
+    /* Basic Nesting */
+    .parent {
+      .child {}
+    }
+    
+    /* SASS nesting*/
+    .parent {
+      & .child {}
+    }
+    
+    /* Both are compiled as below */
+    .parent .child {}
+    
+   - The & always refers to the parent selector when nesting. Think of the & as being removed and replaced with the parent selector.
+---
+
+## Sass Ampersand - Using the & with pseudo classes &:
+
+   ### Example
+   
+    .button {
+      &:visited { }
+      &:hover { }
+      &:active { }
+    }
+    
+    /* This compiles to: */
+    
+    .button:visited { }
+    .button:hover { }
+    .button:active { }
 
 ---
 
