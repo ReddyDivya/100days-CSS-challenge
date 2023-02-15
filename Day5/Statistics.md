@@ -24,6 +24,32 @@
 
 ---
 
+## Sass @extend and Inheritance
+
+  - The @extend directive lets you share a set of CSS properties from one selector to another.
+  - The @extend directive is useful if you have almost identically styled elements that only differ in some small details.
+
+  ### Example
+  
+    .button-basic  {
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-report  {
+      @extend .button-basic; /* extending .button-basic style to .button-report */
+      background-color: red;
+    }
+
+    .button-submit  {
+      @extend .button-basic;  /* extending .button-basic style to .button-submit */
+      background-color: green;
+      color: white;
+    }
+
       
 
 
