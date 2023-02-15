@@ -92,6 +92,77 @@
               line-height:13px;
               padding:0 15px 10px 0;
             }
+
+            span:before{
+              position:absolute;
+              left:-12px;
+              top:6px;
+              display:'block';
+              content:'';
+              width:11px;
+              height:3px;
+              border-radius: 3px;
+            }
+
+            .red:before{
+              background:$red;
+            }
+
+            .blue:before{
+              background:$blue;
+            }
+          }
+
+          .statistic{
+            position:relative;
+            width:250px;
+            height:80px;
+            margin: 0 auto;
+
+            .line1{
+              position:absolute;
+              left:0;
+              top:0;
+              right:0;
+              height:1px;
+              // background: #F2F2F2;
+              background:$red;
+            }
+
+            .line2 {
+                @extend .line1;
+                top: 40px;
+              }
+
+            .line3{
+              @extend .line1;
+              top:inherit;
+              bottom:0;
+            }
+
+            .data{
+              svg{
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+              }
+
+              polyline {
+                  fill: none;
+                  stroke-width: 2;
+                  stroke-linecap: round;
+                }
+
+              &.red polyline {
+                  stroke: $red;
+                }
+
+              &.blue polyline {
+                  stroke: $blue;
+                }
+            }
           }
       </style>
   </head>
